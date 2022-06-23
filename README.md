@@ -32,13 +32,14 @@ Non-book resources:
 Useful Resources:
 
 - [ ] <a href="https://pkg.go.dev/">standard lib</a>
-- [ ] <a href="lets-go.alexedwards.net">Lets Golang</a>
-- [ ] <a href="lets-go-further.alexedwards.net">Lets Go further</a>
-- [ ] <a href="gobyexample.com">Go By Example</a>
+- [ ] <a href="https://lets-go.alexedwards.net/">Lets Golang</a>
+- [ ] <a href="https://lets-go-further.alexedwards.net/">Lets Go further</a>
+- [ ] <a href="https://gobyexample.com">Go By Example</a>
 
 ## Articles I find good
 
 ## Tracking Progress
+
 - [ ] Fundmentals
   - [ ] variables and functions
   - [ ] Pointers
@@ -52,7 +53,7 @@ Useful Resources:
   - [ ] Concurrency
 - [ ] Web
   - [ ] Session Management
-  - [ ] Working With Databases (SQl, MongoDB) 
+  - [ ] Working With Databases (SQl, MongoDB)
   - [ ] RESTful apis
   - [ ] Caching
   - [ ] WebSockets
@@ -60,8 +61,8 @@ Useful Resources:
   - [ ] Authentication and Authorization
   - [ ] Working with Message Queues
 
-
 <<<<<<< HEAD
+
 - [ ] variables and functions
 - [ ] Pointers
 - [ ] Types and Structs
@@ -79,4 +80,5 @@ Useful Resources:
   - [ ] gRPC
   - [ ] Writing Tests
 =======
+
 >>>>>>> 7957a5c63e0a0039b0589d558e5d7aebf0ca6859
