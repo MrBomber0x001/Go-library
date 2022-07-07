@@ -41,14 +41,14 @@ Useful Resources:
 ## Tracking Progress
 
 - [ ] Fundmentals
-  - [ ] variables and functions
-  - [ ] Pointers
-  - [ ] Types and Structs
-  - [ ] Maps, Slices, Arrays
-  - [ ] Decision structures
-  - [ ] Loops over ranges
-  - [ ] Interfaces
-  - [ ] Packages
+  - [x] variables and functions
+  - [x] Pointers
+  - [x] Types and Structs
+  - [x] Maps, Slices, Arrays
+  - [x] Decision structures
+  - [x] Loops over ranges
+  - [x] Interfaces
+  - [x] Packages
   - [ ] Channels
   - [ ] Concurrency
 - [ ] Web
@@ -60,25 +60,3 @@ Useful Resources:
   - [ ] gRPC
   - [ ] Authentication and Authorization
   - [ ] Working with Message Queues
-
-<<<<<<< HEAD
-
-- [ ] variables and functions
-- [ ] Pointers
-- [ ] Types and Structs
-- [ ] Maps, Slices, Arrays
-- [ ] Decision structures
-- [ ] Loops over ranges
-- [ ] Interfaces
-- [ ] Packages
-- [ ] Channels
-- [ ] Concurrency
-- [ ] Web Programming (HTTP Client, HTTP Server)
-  - [ ] Working With Files (JSON, XML)
-  - [ ] RESTful API
-  - [ ] Working With WebSockets
-  - [ ] gRPC
-  - [ ] Writing Tests
-=======
-
->>>>>>> 7957a5c63e0a0039b0589d558e5d7aebf0ca6859
