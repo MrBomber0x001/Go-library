@@ -45,12 +45,34 @@ Useful Resources:
   - [x] Pointers
   - [x] Types and Structs
   - [x] Maps, Slices, Arrays
+  - [x] Functions
   - [x] Decision structures
   - [x] Loops over ranges
   - [x] Interfaces
   - [x] Packages
+  - [x] Generics
+  - [ ] Concurrency Patterns
+
+- [ ] Concurrency
+  - [ ] Go routines
   - [ ] Channels
-  - [ ] Concurrency
+  - [ ] Select
+  - [ ] Sync Package
+- [ ] Concurrency Patterns
+  - [ ]
+  - [ ]
+  - [ ]
+- [ ] Functional
+  - [ ] Compostion over Inheritance
+  - [x] Higher Order functions
+  - [x] Anonymous functions
+  - [ ] Closures
+  - [ ] Streams
+  - [ ] Immutability Monads
+  - [ ] Lazy and Eager Evaluation
+  - [ ] Currying functions
+  - [ ] Functional Design Patterns
+  - [ ] Testing Functions
 - [ ] Web
   - [ ] Session Management
   - [ ] Working With Databases (SQl, MongoDB)
