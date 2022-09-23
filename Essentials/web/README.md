@@ -37,12 +37,14 @@ func main() {
  // if you are about to see a new method or interface look for it's documentation
  http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
   w.Write([]byte("welcome"))
-  n, err := fmt.Fprintf(w, "hello world")
+  n, err := fmt.Fprintf(w, "hello world") // Fprintf() requires a response writer to write to, and return the number of [bytes] written and any write error encountered.
   if err != nil {
    fmt.Println(err)
   }
   fmt.Println(fmt.Sprintf("Number of bytes written %d", n))
  })
+
+
  http.HandleFunc("/home", Home)
  http.HandleFunc("/about", About)
  fmt.Println(fmt.Sprintf("Starting application on port %s", portNumber))
@@ -76,10 +78,12 @@ func Divide(w http.ResponseWriter, r *http.Request) {
 ## Rendering Templates
 
 using a built-in function called `template`
+the templates are stored in folder called 'templates', we need to parse those files and start showing the appropiate file for the right route
+`renderTemplate(responseWriter, templateName)`;
 
 ```go
 func renderTemplate(w http.ResponseWriter, tmpl string) {
-    parsedTemplate, _ := template.ParseFiles("./templates/" + tmpl)
+    parsedTemplate, _ := template.ParseFiles("./templates/" + tmpl); // it takes only a path
     err := parsedTemplate.Execute(w, nil) // "nil" for passing no data to the tempalate
     if err != nil {
         fmt.Printf("Error parsing template", err)

@@ -1,3 +1,10 @@
+## Table of Contents
+- [ ] functions
+- [ ] Generics
+- [ ] Interfaces
+- [ ] Methods
+- [ ] CLosures
+- [ ] 
 ### Interfaces
 
 ```go

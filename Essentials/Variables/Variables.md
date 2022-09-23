@@ -20,7 +20,7 @@ var (
 // type omission (type will be inferred)
 var var_name = val1
 
-// declarations + assigent (shorthand sytax)
+// declarations + assignment (shorthand sytax)
 var_name := val // shorthand works only inside `function` bodies`
 
 ```
@@ -84,7 +84,7 @@ package main
 
 import "fmt"
 
-// type alias
+// type alias (use equal sign)
 type myAlias = string
 
 // Defined types (doesn't use an equal sign)
@@ -105,7 +105,7 @@ func main() {
  fmt.Println(c1, c2)
  fmt.Println(c3)
 
- // any variable declared without initialization is zero-valued
+ // any variable declared without initialization is zero-valued, and the zero-value differs from one type to another
  var i int
  var f float64
  var bo bool
@@ -212,7 +212,7 @@ func main(){
         default:
             ...
      } // output : time to workd, let's party
-     4. using switch without any `condition` == switch true
+     //4. using switch without any `condition` == switch true
      x := 40
      switch {
         case x > 4:
@@ -249,8 +249,6 @@ func main(){
 - Variable Shadowing
 
 the entire go application is compiled to a single binary file
-
-### Variables
 
 ```go
 package main
@@ -338,33 +336,7 @@ func returnTwoValues(s string) (string, string) {
 // _ (underscore) means ignore
 ```
 
-### Pointers
-
-```go
-package main
-
-import "log"
-
-func main() {
- // myStirng is only scoped to the main func
- var myString string
- myString = "Good"
- log.Println("First", myString)
- changeUsingPointer(&myString)
- log.Println("Second", myString)
-}
-
-// Pass by Reference
-func changeUsingPointer(s *string) {
- log.Println("s is set to", s, "but the actual value contained in that address is", *s, "whai is &s")
- newValue := "red"
- *s = newValue
-}
-
-// A pointer points to a specific location "Memory Address"
-```
-
-### Decision Structure
+## Decision Structure
 
 ```go
 package main

@@ -25,7 +25,7 @@ func main(){
         Age: 22,
     }
 
-    // without fields name, you must provide all the fields value
+    // without fields name, you must provide all the fields value in the same order
     var p3 = Person {
         "Bruce", "wayne", 22
     }
@@ -170,6 +170,8 @@ func main(){
 
 TODO: playaround with Recievers
 
+### Receivers
+
 ```go
 package main
 
@@ -180,7 +182,7 @@ import (
 
 type User struct {
  FirstName string
- LastName  string
+ LastName  string 
  Age       int
  BirthDate time.Time
 }
@@ -204,6 +206,10 @@ func (m* User) changeFirstName() string {
     m.FirstName = newValue;
     return m.FirstName;
 }
+func (m* User) changeLastName(newName string) string {
+    m.LastName = newName;
+    return m.LastaName;
+}
 func main() {
  user := User{
   FirstName: "Travis",
@@ -220,6 +226,8 @@ func main() {
  log.Println(myVar.printFirstName())
  log.Println(myVar.printAge())
  log.Println(user.changeFirstName())
+ log.Println(user.changeLastName("Omar Mahmoud"));
+ 
 }
 
 // functions and variables starting with a captial letter in go, are visiable outside the package it's declared on
@@ -255,3 +263,38 @@ myVar.printFirstName()
 ```
 
 we can've buisness logic inside this Receivers
+
+-------------------------------------------
+
+```go
+package main
+
+type user struct {
+    name string
+    email string
+}
+
+func (u user) notify(){
+    fmt.Println("Sending Email to User%s<%s>\n", u.name, u.email);
+}
+func (*u user) changeEmail(email string){
+    u.email = email;
+}
+func main(){
+    bill := user{"Yousef", "yousef@gmail.com"}
+    bill.notify();
+
+    lisa := &user{"Lisa", "lisa@gmail.com"}
+    lisa.notify();
+
+    bill.changeEmail("xxx");
+    bill.notify()
+
+    lisa.changeEmail("xx")
+    lisa.notify()
+}
+```
+
+when to use value Receivers vs pointer Receivers?
+The idea is to not focus on what the
+method is doing with the value, but to focus on what the nature of the value is.

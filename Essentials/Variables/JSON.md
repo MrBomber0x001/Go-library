@@ -1,5 +1,7 @@
-
 ## Working with JSON
+
+1. consistent structure and pre knowing one
+2. inconsisent structure or you don't know the structure
 
 ```go
 package main
@@ -13,6 +15,7 @@ import (
 type Person struct {
  FirstName string `json:"first_name"`
  LastName  string `json:"last_name"`
+ HairColor string `json:"hair_color"`
  HasDog    bool   `json:"has_dog"`
 }
 
@@ -20,44 +23,53 @@ func main() {
  myJson := `
  [
   {
-   "first_name": "Yousf",
+   "first_name": "yousef",
    "last_name": "meska",
+   "hair_color": "black",
    "has_dog": true
   },
   {
-   "first_name": "Ahmed",
-   "last_name": "Meska",
+   "first_name": "omar",
+   "last_name": "meska",
+   "hair_color": "whirte",
    "has_dog": false
   }
  ]
  `
- // write json to a struct
+
+ // write json into struct
  var unmarshalled []Person
- // Unmarshall([]bytes date, ptr *v)
- //[]bytes(myJson) to convert string to bytes
  err := json.Unmarshal([]byte(myJson), &unmarshalled)
  if err != nil {
-  log.Printf("error unmarshalling")
+  log.Println("Error unmarshalling json", err)
  }
+
  log.Printf("unmarshalled: %v", unmarshalled)
 
  // write json from a struct
  var mySlice []Person
+ var m1 Person
+ m1.FirstName = "Wally"
+ m1.LastName = "West"
+ m1.HairColor = "red"
+ m1.HasDog = false
+ mySlice = append(mySlice, m1)
 
- var marshall1 Person
- marshall1.FirstName = "Wally"
- marshall1.LastName = "werst"
- marshall1.HasDog = true
+ var m2 Person
+ m2.FirstName = "yousef"
+ m2.LastName = "meska"
+ m2.HairColor = "yellow"
+ m2.HasDog = true
+ mySlice = append(mySlice, m2)
 
- mySlice = append(mySlice, marshall1)
-
- newJson, err := json.MarshalIndent(mySlice, "", "     ") // gives us a slice of bytes
+ newJson, err := json.MarshalIndent(mySlice, "", " ")
  if err != nil {
   log.Println("error marshalling", err)
  }
- fmt.Println(string(newJson))
-}
 
+ fmt.Println(string(newJson))
+
+}
 
 // For development purpose use MarsharIndex, for production use Marshal
 

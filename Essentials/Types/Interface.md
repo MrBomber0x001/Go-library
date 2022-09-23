@@ -46,7 +46,7 @@ func main() {
  //  NumberOfTeeth: 32,
  // }
 
- //PrintInfo(gorilla) // here's an error
+ //PrintInfo(gorilla) // here's an error, because goriall hasn't implemented the required method of the interface
 
 }
 
@@ -56,7 +56,7 @@ func PrintInfo(a Animal) {
 
 // interfaces here are just like the interface in Typescript
 // anything can implement interface by just implementing the required!
-// there will be an error if we use Reciever as pointer
+// there will be an error if we use Reciever as pointer // TODO: search why?!
 func (d *Dog) Say() string {
  return "woof"
 }

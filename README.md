@@ -41,16 +41,16 @@ Useful Resources:
 ## Tracking Progress
 
 - [ ] Fundmentals
-  - [x] variables and functions
-  - [x] Pointers
-  - [x] Types and Structs
-  - [x] Maps, Slices, Arrays
-  - [x] Functions
-  - [x] Decision structures
-  - [x] Loops over ranges
-  - [x] Interfaces
-  - [x] Packages
-  - [x] Generics
+  - [] variables and functions
+  - [] Pointers
+  - [] Types and Structs
+  - [] Maps, Slices, Arrays
+  - [] Functions
+  - [] Decision structures
+  - [] Loops over ranges
+  - [] Interfaces
+  - [] Packages
+  - [] Generics
   - [ ] Concurrency Patterns
 
 - [ ] Concurrency
@@ -58,14 +58,16 @@ Useful Resources:
   - [ ] Channels
   - [ ] Select
   - [ ] Sync Package
+
 - [ ] Concurrency Patterns
-  - [ ]
-  - [ ]
-  - [ ]
+  - [ ] Runner
+  - [ ] Pool
+  - [ ] Worker
+
 - [ ] Functional
   - [ ] Compostion over Inheritance
-  - [x] Higher Order functions
-  - [x] Anonymous functions
+  - [ ] Higher Order functions
+  - [ ] Anonymous functions
   - [ ] Closures
   - [ ] Streams
   - [ ] Immutability Monads
@@ -73,6 +75,9 @@ Useful Resources:
   - [ ] Currying functions
   - [ ] Functional Design Patterns
   - [ ] Testing Functions
+
+- [ ] Testing and Benchmarking
+
 - [ ] Web
   - [ ] Session Management
   - [ ] Working With Databases (SQl, MongoDB)
