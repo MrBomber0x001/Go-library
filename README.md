@@ -41,16 +41,16 @@ Useful Resources:
 ## Tracking Progress
 
 - [ ] Fundmentals
-  - [] variables and functions
-  - [] Pointers
-  - [] Types and Structs
-  - [] Maps, Slices, Arrays
-  - [] Functions
-  - [] Decision structures
-  - [] Loops over ranges
-  - [] Interfaces
-  - [] Packages
-  - [] Generics
+  - [ ] variables and functions
+  - [ ] Pointers
+  - [ ] Types and Structs
+  - [ ] Maps, Slices, Arrays
+  - [ ] Functions
+  - [ ] Decision structures
+  - [ ] Loops over ranges
+  - [ ] Interfaces
+  - [ ] Packages
+  - [ ] Generics
   - [ ] Concurrency Patterns
 
 - [ ] Concurrency
